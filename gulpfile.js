@@ -47,7 +47,7 @@ const devStyles = () => {
 };
 
 const js = () => {
-  return gulp.src(['source/js/*.js'])
+  return gulp.src(['source/js/**/*.js'])
       // .pipe(webpackStream(webpackConfig))
       .pipe(gulp.dest('build/js'))
 };

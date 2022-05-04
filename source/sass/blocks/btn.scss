@@ -1,0 +1,25 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Condensed", "Arial", monospace;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.5px;
+  user-select: none;
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+}

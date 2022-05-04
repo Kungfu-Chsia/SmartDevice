@@ -1,0 +1,25 @@
+.accordion {
+  @media (max-width: $tablet-width) {
+    .accordion__content {
+      display: none;
+    }
+
+    &.show {
+      .accordion__toggle-vert {
+        display: none;
+      }
+
+      .accordion__content {
+        display: block;
+      }
+    }
+  }
+}
+
+.accordion__toggle-wrapper {
+  @media (max-width: $tablet-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}

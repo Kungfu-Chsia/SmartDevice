@@ -1,0 +1,194 @@
+.goods {
+  background-color: $main-blue;
+
+  & h3 {
+    font-family: "Roboto Condensed", "Arial", monospace;
+    font-size: 36px;
+    line-height: 51px;
+    font-weight: 400;
+    color: $color-default-white;
+    padding-top: 65px;
+    margin-bottom: 53px;
+
+    @media (max-width: $desktop-width) {
+      padding-top: 55px;
+      margin-bottom: 38px;
+    }
+
+    @media (max-width: $tablet-width) {
+      font-size: 28px;
+      line-height: 39px;
+      padding-top: 48px;
+      margin-bottom: 29px;
+      padding-right: 45px;
+    }
+  }
+}
+
+.goods__title-long h3 {
+  display: block;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.goods__title-short h3 {
+  display: none;
+
+  @media (max-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.goods__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 140px;
+
+  @media (max-width: $desktop-width) {
+    flex-direction: column;
+    padding-bottom: 45px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 56px;
+  }
+}
+
+.goods__card-prod {
+  background-color: $blue;
+  background-image: url("../img/card1-l.webp");
+
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("../img/card1-l@2x.webp");
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/card1-m.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/card1-m@2x.webp");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/card1-s.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/card1-s@2x.webp");
+    }
+  }
+}
+
+.goods__card-montage {
+  background-color: $blue;
+  background-image: url("../img/card2-l.webp");
+
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("../img/card2-l@2x.webp");
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/card2-m.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/card2-m@2x.webp");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/card2-s.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/card2-s@2x.webp");
+    }
+  }
+}
+
+.goods__card-components {
+  background-color: $blue;
+  background-image: url("../img/card3-l.webp");
+
+  @media (min-width: 1024px) and (min-resolution: 2dppx) {
+    background-image: url("../img/card3-l@2x.webp");
+  }
+
+  @media (max-width: $desktop-width) {
+    background-image: url("../img/card3-m.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/card3-m@2x.webp");
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/card3-s.webp");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/card3-s@2x.webp");
+    }
+  }
+}
+
+.goods__card {
+  position: relative;
+  min-height: 650px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 350px;
+  width: 100%;
+
+  @media (min-width: 1174px) {
+    width: 100%;
+  }
+
+  @media (min-width: ($desktop-width + 1)) and (max-width: 1174px) {
+    width: 30%;
+  }
+
+  @media (max-width: $desktop-width) {
+    max-width: 1006px;
+    min-height: 250px;
+    margin-bottom: 30px;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 100%;
+    min-height: 250px;
+  }
+
+  & h4 {
+    font-family: "Roboto Condensed", "Arial", monospace;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    color: $color-default-white;
+    padding: 22px 139px 0 40px;
+
+    @media (max-width: $desktop-width) {
+      padding: 11px 477px 0 45px;
+    }
+
+    @media (max-width: $tablet-width) {
+      font-size: 18px;
+      padding: 2px 106px 0 31px;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.goods__icon-card {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  @media (max-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}

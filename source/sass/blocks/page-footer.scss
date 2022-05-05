@@ -194,7 +194,7 @@
   display: block;
   margin-bottom: 8px;
   font-style: normal;
-  min-width: 249px;
+  max-width: 321px;
 
   @media (max-width: $tablet-width) {
     font-size: 14px;

@@ -406,7 +406,7 @@
                 <form id="questions-form-modal-table" action="https://echo.htmlacademy.ru/" method="post">
                   <div class="questions-form-modal__form-input">
                     <label class="visually-hidden" for="namie">имя</label>
-                      <input type="text" id="namie" name="name" placeholder="Имя" required>
+                      <input type="text" id="namie" name="name" placeholder="Имя" required autofocus>
                   </div>
                   <div class="questions-form-modal__form-input">
                     <label class="visually-hidden" for="telefon">телефон</label>
@@ -414,14 +414,15 @@
                   </div>
                   <textarea class="questions-form-modal__textarea" id="qsts" name="qsts" placeholder="Ваш вопрос"></textarea>
                   <div class="questions-form-modal__button-wrap">
+                    <div class="questions-form-modal__personal">
+                      <input class="visually-hidden questions-form-modal__checkbox" type="checkbox" id="checked" checked required>
+                      <label tabindex="1" for="checked">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
+                    </div>
                     <div class="questions-form-modal__button-submit">
                       <label class="visually-hidden" for="submitt">Отправить</label>
                       <input type="submit" id="submitt" value="Отправить">
                     </div>
-                    <div class="questions-form-modal__personal">
-                      <input class="visually-hidden questions-form-modal__checkbox" type="checkbox" id="checked" checked required>
-                      <label for="checked">Я&nbsp;согласен на&nbsp;обработку персональных данных</label>
-                    </div>
+
                   </div>
                 </form>
               </div>

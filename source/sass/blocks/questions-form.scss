@@ -245,7 +245,6 @@
 
 .questions-form__button-wrap {
   display: flex;
-  flex-wrap: wrap;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;

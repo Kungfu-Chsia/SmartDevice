@@ -594,6 +594,10 @@ button,
   clip-path: inset(100%);
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .scroll-lock-ios {
   position: fixed;
   overflow: hidden;
@@ -635,7 +639,7 @@ button,
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 43, 102, 0.5);
+  background-color: rgba(3, 16, 27, 0.7);
   z-index: 19;
 }
 
@@ -1217,8 +1221,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .questions-form__checkbox {
@@ -1378,7 +1380,7 @@ button,
   display: block;
   margin-bottom: 8px;
   font-style: normal;
-  min-width: 249px;
+  max-width: 321px;
 }
 
 .page-footer__section-contact-wrapper {
@@ -1407,11 +1409,11 @@ button,
   width: 500px;
   position: fixed;
   border-radius: 3px;
-  top: 12%;
+  top: 10%;
   right: 50%;
-  -webkit-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  transform: translateX(50%);
+  -webkit-transform: translateX(48%);
+  -ms-transform: translateX(48%);
+  transform: translateX(48%);
 }
 
 .questions-form-modal__wrap {
@@ -1429,7 +1431,7 @@ button,
 }
 
 .questions-form-modal__title h3 {
-  margin-top: 32px;
+  margin-top: 41px;
   margin-bottom: 0;
   font-weight: 400;
   font-size: 30px;
@@ -1447,7 +1449,7 @@ button,
 }
 
 .questions-form-modal__table {
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 }
 
 .questions-form-modal__table form {
@@ -1511,7 +1513,7 @@ button,
   min-height: 155px;
   background-color: rgba(4, 20, 39, 0.15);
   resize: none;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 }
 
 .questions-form-modal__textarea::-webkit-input-placeholder {
@@ -1553,9 +1555,9 @@ button,
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
 }
 
 .questions-form-modal__checkbox {

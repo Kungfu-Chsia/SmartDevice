@@ -5,9 +5,9 @@
   width: 500px;
   position: fixed;
   border-radius: 3px;
-  top: 12%;
+  top: 10%;
   right: 50%;
-  transform: translateX(50%);
+  transform: translateX(48%);
 }
 
 .questions-form-modal__wrap {
@@ -24,7 +24,7 @@
   margin-right: 40px;
 
   & h3 {
-    margin-top: 32px;
+    margin-top: 41px;
     margin-bottom: 0;
     font-weight: 400;
     font-size: 30px;
@@ -43,7 +43,7 @@
 }
 
 .questions-form-modal__table {
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 
   & form {
     display: flex;
@@ -86,7 +86,7 @@
   min-height: 155px;
   background-color: rgba(4, 20, 39, 0.15);
   resize: none;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   &::placeholder {
     color: $color-default-white;
@@ -109,7 +109,7 @@
 
 .questions-form-modal__button-wrap {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .questions-form-modal__checkbox {

@@ -1124,7 +1124,7 @@ button,
   max-width: 580px;
 }
 
-.questions-form__table form div:first-child {
+.questions-form__table div:first-child {
   margin-right: 4.5%;
 }
 
@@ -1824,10 +1824,6 @@ button,
     margin-top: 16px;
   }
 
-  .advantages__card h3:nth-child(4) {
-    margin-top: 14px;
-  }
-
   .advantages__card p {
     margin-top: 5px;
   }
@@ -2247,7 +2243,7 @@ button,
     flex-direction: column;
   }
 
-  .questions-form__table form div:first-child {
+  .questions-form__table div:first-child {
     margin-right: 0;
   }
 

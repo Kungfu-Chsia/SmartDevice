@@ -145,13 +145,13 @@
     @media (max-width: $tablet-width) {
       flex-direction: column;
     }
+  }
 
-    & div:first-child {
-      margin-right: 4.5%;
+  & div:first-child {
+    margin-right: 4.5%;
 
-      @media (max-width: $tablet-width) {
-        margin-right: 0;
-      }
+    @media (max-width: $tablet-width) {
+      margin-right: 0;
     }
   }
 }

@@ -56,10 +56,6 @@
 
     @media (max-width: $desktop-width) {
       margin-top: 16px;
-
-      &:nth-child(4) {
-        margin-top: 14px;
-      }
     }
 
     @media (max-width: $tablet-width) {

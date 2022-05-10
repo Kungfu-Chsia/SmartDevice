@@ -11,13 +11,14 @@
     background-image: linear-gradient(139.14deg, rgba(4, 24, 39, 0.5) 635px, rgba(0, 0, 0, 0) 635px);
 
     @media (max-width: 1730px) {
-      left: 0;
-      top: -302px;
+      left: -217px;
+      top: -107px;
+      width: 84%;
     }
 
     @media (max-width: 1260px) {
-      left: -51px;
-      top: -349px;
+      left: -335px;
+      top: -108px;
     }
 
     @media (max-width: 1030px) {
@@ -62,7 +63,7 @@
   position: relative;
 
   @media (max-width: 1030px) {
-    align-items: flex-start;
+    align-items: center;
   }
 
   @media (max-width: $tablet-width) {
@@ -76,48 +77,49 @@
   @media (max-width: $desktop-width) {
     margin-right: 0;
   }
+}
 
-  & h3 {
-    margin-top: 166px;
-    margin-bottom: 0;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 51px;
-    font-family: "Roboto Condensed", "Arial", monospace;
-    color: $color-default-white;
+.questions-form__title h3 {
+  margin-top: 166px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  font-family: "Roboto Condensed", "Arial", monospace;
+  color: $color-default-white;
 
-    @media (max-width: $desktop-width) {
-      margin-top: 46px;
-      margin-right: 92px;
-    }
-
-    @media (max-width: $tablet-width) {
-      font-size: 30px;
-      line-height: 42px;
-      margin-right: 0;
-    }
+  @media (max-width: $desktop-width) {
+    margin-top: 46px;
+    margin-right: 127px;
   }
 
-  & p {
-    font-size: 16px;
-    line-height: 22px;
-    color: $color-default-white;
-    margin-bottom: 31px;
-
-    @media (max-width: $desktop-width) {
-      margin-top: 6px;
-      margin-bottom: 24px;
-    }
-
-    @media (max-width: $tablet-width) {
-      font-size: 14px;
-      line-height: 20px;
-      margin-right: 0;
-      padding-right: 10px;
-      margin-bottom: 31px;
-    }
+  @media (max-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 42px;
+    margin-right: 0;
   }
 }
+
+.questions-form__title p {
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  margin-bottom: 32px;
+
+  @media (max-width: $desktop-width) {
+    margin-top: 6px;
+    margin-bottom: 24px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+    margin-right: 0;
+    padding-right: 10px;
+    margin-bottom: 31px;
+  }
+}
+
 
 .questions-form__table {
   margin-right: 10px;
@@ -132,19 +134,19 @@
     margin-right: 0;
     margin-bottom: 82px;
   }
+}
 
-  & form {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 580px;
+.questions-form__table form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 580px;
 
-    @media (max-width: $desktop-width) {
-      max-width: 670px;
-    }
+  @media (max-width: $desktop-width) {
+    max-width: 670px;
+  }
 
-    @media (max-width: $tablet-width) {
-      flex-direction: column;
-    }
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
   }
 
   & div:first-child {
@@ -178,6 +180,7 @@
 
   @media (max-width: $tablet-width) {
     min-width: 270px;
+    margin-bottom: 19px;
   }
 
   &::placeholder {
@@ -203,13 +206,14 @@
   @media (max-width: $desktop-width) {
     max-width: 668px;
     padding-top: 29px;
+    margin-bottom: 35px;
   }
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
     padding-top: 23px;
     min-height: 178px;
-    margin-bottom: 29px;
+    margin-bottom: 33px;
   }
 
   &::placeholder {
@@ -217,7 +221,7 @@
   }
 }
 
-.questions-form__button-submit input {
+.questions-form__button-submit button {
   min-width: 265px;
   font-weight: 700;
   font-size: 16px;
@@ -269,8 +273,9 @@
   cursor: pointer;
 
   @media (max-width: $desktop-width) {
-    margin-top: 13px;
+    margin-top: 10px;
     margin-left: 24px;
+    margin-bottom: 5px;
   }
 
   @media (max-width: $tablet-width) {
@@ -302,8 +307,8 @@
 .questions-form__checkbox + label::after {
   content: " ";
   position: absolute;
-  left: -2px;
-  top: -5px;
+  left: 0;
+  top: 4px;
   background-image: url("../img/icons/check-of.svg");
   width: 15px;
   height: 15px;
@@ -312,7 +317,7 @@
 
   @media (max-width: 767px) {
     left: 0;
-    top: 0;
+    top: 7px;
     background-image: url("../img/icons/check-of.svg");
     width: 20px;
     height: 20px;

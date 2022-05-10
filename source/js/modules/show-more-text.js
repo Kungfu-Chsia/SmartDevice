@@ -5,6 +5,7 @@ const initShowMore = () => {
     const aboutBtn = aboutWrapEl.querySelector('.about__button');
 
     aboutBtn.addEventListener('click', function () {
+
       aboutWrapEl.classList.toggle('show');
     });
 

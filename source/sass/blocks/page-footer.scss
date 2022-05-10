@@ -17,13 +17,24 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 35px;
+
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   width: 100%;
+    //   max-width: 769px;
+    //   height: 1px;
+    //   background-color: rgba(248, 253, 255, 0.7);
+    //   left: 0;
+    //   bottom: 261px;
+    // }
   }
 }
 
 .page-footer__inner {
   width: 240px;
   margin-right: -23px;
-  margin-left: 17%;
 
   @media (max-width: 1439px) {
     margin-right: 0;
@@ -46,7 +57,7 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-bottom: 7px;
+    margin-bottom: 9px;
     flex-direction: column;
     align-items: center;
   }
@@ -58,7 +69,7 @@
   margin-left: 162px;
   max-width: 500px;
   position: relative;
-  margin-right: 80px;
+  margin-right: 106px;
 
   @media (max-width: 1439px) {
     margin-left: 6%;
@@ -99,17 +110,20 @@
       top: -17px;
     }
   }
-
-  & ul {
-    @include list-style;
-  }
 }
+
+.page-footer__site-sections ul {
+  @include list-style;
+}
+
 
 .page-footer__site-sections-wrap {
   display: flex;
+  margin: 0 -26px;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
+    margin: 0 -50px;
   }
 }
 
@@ -172,23 +186,22 @@
 
 .page-footer__site-sections-column {
   margin-right: 30px;
+}
 
-  & li {
-    margin-bottom: 8px;
-    max-width: 220px;
-  }
+.page-footer__site-sections-column li {
+  margin-bottom: 8px;
+  max-width: 220px;
+}
 
-  & a {
-    color: rgba(255, 255, 255, 0.7);
+.page-footer__site-sections-column a {
+  color: rgba(255, 255, 255, 0.7);
 
-    @media (max-width: $tablet-width) {
-      font-size: 14px;
-      line-height: 22px;
-    }
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
-.page-footer__phones address,
 .page-footer__phones a {
   color: rgba(255, 255, 255, 0.7);
   display: block;
@@ -199,15 +212,40 @@
   @media (max-width: $tablet-width) {
     font-size: 14px;
     line-height: 22px;
-    margin-bottom: 11px;
+    // margin-bottom: 14px;
   }
 }
+
+.page-footer__phones-address {
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  margin-bottom: 8px;
+  font-style: normal;
+  max-width: 321px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 14px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+// .page-footer__phones-number {
+//   margin-bottom: 14px;
+
+//   @media (max-width: $tablet-width) {
+//     &--indent {
+//       margin-bottom: 8px;
+//     }
+//   }
+// }
 
 .page-footer__section-contact-wrapper {
   display: flex;
 
   @media (max-width: $tablet-width) {
     flex-direction: column;
+    margin: 0 -26px;
   }
 }
 
@@ -215,8 +253,8 @@
 .page-footer__contacts {
   @media (max-width: $desktop-width) {
     margin-top: 26px;
-    margin-left: 32px;
-    margin-right: 29px;
+    margin-left: 21px;
+    // margin-right: 29px;
   }
 
   @media (max-width: $tablet-width) {
@@ -232,6 +270,7 @@
       height: 1px;
       background-color: rgba(248, 253, 255, 0.7);
       left: 0;
+      bottom: 47px;
     }
   }
 }

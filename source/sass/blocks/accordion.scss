@@ -4,7 +4,7 @@
       display: none;
     }
 
-    &.show {
+    &--show {
       .accordion__toggle-vert {
         display: none;
       }
@@ -17,9 +17,33 @@
 }
 
 .accordion__toggle-wrapper {
+  &--right {
+    margin-left: 26px;
+
+    @media (max-width: $desktop-width) {
+      margin-left: 50px;
+    }
+
+    @media (max-width: $tablet-width) {
+      margin-left: 0;
+    }
+  }
+
   @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+  }
+}
+
+.accordion__header-menu {
+  margin: 0 -26px;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 -50px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
   }
 }

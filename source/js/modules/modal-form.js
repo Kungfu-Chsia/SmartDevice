@@ -1,7 +1,6 @@
 const createFormSuccessError = () => {
   const modalTemplate = document.querySelector('.questions-form-modal')
       .content
-      // .querySelector('.questions-form-modal__wrapper');
       .querySelector('.overlay');
 
   const modalFormCreated = modalTemplate.cloneNode(true);
@@ -24,9 +23,19 @@ const initModalWindow = () => {
   const btnClosed = document.querySelector('.questions-form-modal__toggle');
   const body = document.body;
 
+
+  // focus on modal
+  const modalButton = document.querySelector('.questions-form-modal__btn');
+  const modalToggle = document.querySelector('.questions-form-modal__toggle');
+  const modalСheckbox = document.querySelector('.questions-form-modal__checkbox');
+  const modalName = document.getElementById('namie');
+
+
+  // закрытие\открытие  модалки и оверлей
   btnCallback.addEventListener('click', function () {
     overlay.classList.toggle('hidden');
     modalForm.classList.toggle('active');
+    modalName.focus();
     body.classList.add('overflow-hidden');
   });
 
@@ -55,6 +64,26 @@ const initModalWindow = () => {
     }
   });
 
+  // modal tab
+  if (typeof (modalButton && modalToggle && modalСheckbox) !== 'undefined' && modalButton && modalToggle && modalСheckbox !== null) {
+
+    modalButton.addEventListener('keydown', function (evt) {
+      if (!evt.shiftKey && evt.key === 'Tab') {
+        evt.preventDefault();
+        modalToggle.focus();
+      } else if (evt.shiftKey && evt.key === 'Tab') {
+        evt.preventDefault();
+        modalСheckbox.focus();
+      }
+    });
+
+    modalToggle.addEventListener('keydown', function (evt) {
+      if (evt.shiftKey && evt.key === 'Tab') {
+        evt.preventDefault();
+        modalButton.focus();
+      }
+    });
+  }
 };
 
 export default initModalWindow;

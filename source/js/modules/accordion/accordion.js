@@ -3,7 +3,7 @@ const initAccordion = function () {
 
   const closeAccordion = function () {
     accordionEls.forEach(function (accordionEl) {
-      accordionEl.classList.remove('show');
+      accordionEl.classList.remove('accordion--show');
     });
   };
 
@@ -14,11 +14,11 @@ const initAccordion = function () {
 
     togglewrapperEl.addEventListener('click', function () {
 
-      if (accordionEl.classList.contains('show')) {
+      if (accordionEl.classList.contains('accordion--show')) {
         closeAccordion();
       } else {
         closeAccordion();
-        accordionEl.classList.add('show');
+        accordionEl.classList.add('accordion--show');
       }
 
 

@@ -39,51 +39,51 @@
   @media (max-width: $desktop-width) {
     padding-left: 0;
   }
+}
 
-  & h1 {
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 94px;
-    font-family: "Roboto Condensed", "Arial", monospace;
-    text-transform: uppercase;
-    letter-spacing: 5.7px;
-    color: $font-light-grey;
-    padding-top: 251px;
-    margin-bottom: 31px;
+.intro__wrapper h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  font-family: "Roboto Condensed", "Arial", monospace;
+  text-transform: uppercase;
+  letter-spacing: 5.7px;
+  color: $font-light-grey;
+  padding-top: 251px;
+  margin-bottom: 31px;
 
-    @media (max-width: $desktop-width) {
-      font-size: 64px;
-      line-height: 75px;
-      letter-spacing: 4.7px;
-      padding-top: 137px;
-      margin-bottom: 0;
-    }
-
-    @media (max-width: $tablet-width) {
-      font-size: 36px;
-      line-height: 42px;
-      letter-spacing: 2.7px;
-      padding-top: 127px;
-      margin-bottom: 8px;
-    }
+  @media (max-width: $desktop-width) {
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: 4.7px;
+    padding-top: 137px;
+    margin-bottom: 0;
   }
 
-  & p {
-    font-size: 22px;
-    line-height: 34px;
-    color: $font-light-grey;
-    max-width: 685px;
-    margin: 0 0 48px 0;
+  @media (max-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 2.7px;
+    padding-top: 127px;
+    margin-bottom: 8px;
+  }
+}
 
-    @media (max-width: $desktop-width) {
-      margin-bottom: 58px;
-    }
+.intro__wrapper p {
+  font-size: 22px;
+  line-height: 34px;
+  color: $font-light-grey;
+  max-width: 685px;
+  margin: 0 0 48px 0;
 
-    @media (max-width: $tablet-width) {
-      font-size: 14px;
-      line-height: 22px;
-      margin-bottom: 44px;
-    }
+  @media (max-width: $desktop-width) {
+    margin-bottom: 58px;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 44px;
   }
 }
 

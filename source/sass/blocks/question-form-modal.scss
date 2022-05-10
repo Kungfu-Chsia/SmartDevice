@@ -22,35 +22,37 @@
 
 .questions-form-modal__title {
   margin-right: 40px;
-
-  & h3 {
-    margin-top: 41px;
-    margin-bottom: 0;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 42px;
-    font-family: "Roboto Condensed", "Arial", monospace;
-    color: $color-default-white;
-  }
-
-  & p {
-    font-size: 16px;
-    line-height: 22px;
-    color: $color-default-white;
-    margin-bottom: 37px;
-    margin-top: 3px;
-  }
 }
+
+.questions-form-modal__title h3 {
+  margin-top: 41px;
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  font-family: "Roboto Condensed", "Arial", monospace;
+  color: $color-default-white;
+}
+
+.questions-form-modal__title p {
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  margin-bottom: 37px;
+  margin-top: 3px;
+}
+
 
 .questions-form-modal__table {
   margin-bottom: 38px;
-
-  & form {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 420px;
-  }
 }
+
+.questions-form-modal__table form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 420px;
+}
+
 
 .questions-form-modal__form-input input {
   background-color: rgba(4, 20, 39, 0.15);
@@ -93,7 +95,7 @@
   }
 }
 
-.questions-form-modal__button-submit input {
+.questions-form-modal__button-submit button {
   width: 420px;
   font-weight: 700;
   font-size: 16px;

@@ -10,12 +10,15 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 18px;
-
-    & .advantages__card:nth-child(n+3) {
-      min-height: 325px;
-    }
   }
 }
+
+.advantages__wrapper .advantages__card:nth-child(n+3) {
+  @media (max-width: $tablet-width) {
+    min-height: 325px;
+  }
+}
+
 
 .advantages__card {
   display: flex;
@@ -53,16 +56,17 @@
     width: 48%;
     padding: 39px 39px 15px 40px;
     min-height: 360px;
+  }
 
-    @media (max-width: $tablet-width) {
-      min-width: 270px;
-      width: 100%;
-      min-height: 340px;
-      padding: 30px 39px 15px 25px;
-      margin-bottom: 30px;
-    }
+  @media (max-width: $tablet-width) {
+    min-width: 270px;
+    width: 100%;
+    min-height: 340px;
+    padding: 30px 39px 15px 25px;
+    margin-bottom: 30px;
   }
 }
+
 
 .advantages__card h3 {
   font-family: "Roboto Condensed", "Arial", monospace;

@@ -17,18 +17,6 @@
 
   @media (max-width: $tablet-width) {
     margin-top: 35px;
-
-
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   width: 100%;
-    //   max-width: 769px;
-    //   height: 1px;
-    //   background-color: rgba(248, 253, 255, 0.7);
-    //   left: 0;
-    //   bottom: 261px;
-    // }
   }
 }
 
@@ -207,7 +195,7 @@
   display: block;
   margin-bottom: 8px;
   font-style: normal;
-  max-width: 321px;
+  max-width: 185px;
 
   @media (max-width: $tablet-width) {
     font-size: 14px;
@@ -230,16 +218,6 @@
   }
 }
 
-// .page-footer__phones-number {
-//   margin-bottom: 14px;
-
-//   @media (max-width: $tablet-width) {
-//     &--indent {
-//       margin-bottom: 8px;
-//     }
-//   }
-// }
-
 .page-footer__section-contact-wrapper {
   display: flex;
 
@@ -254,7 +232,6 @@
   @media (max-width: $desktop-width) {
     margin-top: 26px;
     margin-left: 21px;
-    // margin-right: 29px;
   }
 
   @media (max-width: $tablet-width) {

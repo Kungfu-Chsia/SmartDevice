@@ -148,13 +148,13 @@
   @media (max-width: $tablet-width) {
     flex-direction: column;
   }
+}
 
-  & div:first-child {
-    margin-right: 4.5%;
+.questions-form__form-input--right {
+  margin-right: 4.5%;
 
-    @media (max-width: $tablet-width) {
-      margin-right: 0;
-    }
+  @media (max-width: $tablet-width) {
+    margin-right: 0;
   }
 }
 
@@ -268,13 +268,13 @@
   width: 222px;
   display: block;
   margin-bottom: 5px;
-  margin-left: 27px;
+  margin-left: 51px;
   margin-top: 18px;
   cursor: pointer;
 
   @media (max-width: $desktop-width) {
     margin-top: 10px;
-    margin-left: 24px;
+    margin-left: 49px;
     margin-bottom: 5px;
   }
 

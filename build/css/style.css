@@ -677,6 +677,18 @@ button,
   left: 5px;
 }
 
+.show .about__hidden {
+  display: block;
+}
+
+.show .about__show-less {
+  display: block;
+}
+
+.show .about__show-more {
+  display: none;
+}
+
 .container {
   width: 100%;
   max-width: 1250px;
@@ -921,18 +933,6 @@ button,
   color: #041827;
 }
 
-.show .about__hidden {
-  display: block;
-}
-
-.show .about__show-less {
-  display: block;
-}
-
-.show .about__show-more {
-  display: none;
-}
-
 .about__wrapper {
   padding-left: 250px;
   position: relative;
@@ -1124,7 +1124,7 @@ button,
   max-width: 580px;
 }
 
-.questions-form__table form div:first-child {
+.questions-form__form-input--right {
   margin-right: 4.5%;
 }
 
@@ -1236,7 +1236,7 @@ button,
   width: 222px;
   display: block;
   margin-bottom: 5px;
-  margin-left: 27px;
+  margin-left: 51px;
   margin-top: 18px;
   cursor: pointer;
 }
@@ -1379,7 +1379,7 @@ button,
   display: block;
   margin-bottom: 8px;
   font-style: normal;
-  max-width: 321px;
+  max-width: 185px;
 }
 
 .page-footer__phones-address {
@@ -1416,7 +1416,7 @@ button,
   width: 500px;
   position: fixed;
   border-radius: 3px;
-  top: 10%;
+  top: 11.3%;
   right: 50%;
   -webkit-transform: translateX(48%);
   -ms-transform: translateX(48%);
@@ -1481,7 +1481,7 @@ button,
   padding: 15px;
   min-width: 420px;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   position: relative;
   display: block;
 }
@@ -1514,13 +1514,13 @@ button,
   border: none;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 20px 15px 5px 15px;
+  padding: 27px 15px 5px 15px;
   max-width: 420px;
   width: 100%;
   min-height: 155px;
   background-color: rgba(4, 20, 39, 0.15);
   resize: none;
-  margin-bottom: 20px;
+  margin-bottom: 31px;
 }
 
 .questions-form-modal__textarea::-webkit-input-placeholder {
@@ -1616,12 +1616,12 @@ button,
 
 .questions-form-modal__toggle {
   position: absolute;
-  right: 24px;
-  top: -12px;
+  right: 12px;
+  top: -22px;
   display: block;
   z-index: 2;
-  width: 20px;
-  height: 22px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   border: 0;
   background-color: transparent;
@@ -1630,8 +1630,8 @@ button,
 .questions-form-modal__toggle::before {
   content: "";
   position: absolute;
-  top: 10px;
-  left: -4px;
+  top: 17px;
+  left: 8px;
   width: 27px;
   height: 1px;
   background-color: #ffffff;
@@ -1643,8 +1643,8 @@ button,
 .questions-form-modal__toggle::after {
   content: "";
   position: absolute;
-  top: 10px;
-  left: -4px;
+  top: 17px;
+  left: 8px;
   width: 27px;
   height: 1px;
   background-color: #ffffff;
@@ -1954,7 +1954,7 @@ button,
 
   .questions-form__checkbox + label {
     margin-top: 10px;
-    margin-left: 24px;
+    margin-left: 49px;
     margin-bottom: 5px;
   }
 
@@ -2039,16 +2039,6 @@ button,
   }
 }
 
-@media (max-width: 1023px) and (max-width: 767px) {
-  .advantages__card {
-    min-width: 270px;
-    width: 100%;
-    min-height: 340px;
-    padding: 30px 39px 15px 25px;
-    margin-bottom: 30px;
-  }
-}
-
 @media (max-width: 767px) {
   .accordion__toggle {
     display: block;
@@ -2129,6 +2119,14 @@ button,
 
   .advantages__wrapper .advantages__card:nth-child(n+3) {
     min-height: 325px;
+  }
+
+  .advantages__card {
+    min-width: 270px;
+    width: 100%;
+    min-height: 340px;
+    padding: 30px 39px 15px 25px;
+    margin-bottom: 30px;
   }
 
   .advantages__card h3 {
@@ -2269,7 +2267,7 @@ button,
     flex-direction: column;
   }
 
-  .questions-form__table form div:first-child {
+  .questions-form__form-input--right {
     margin-right: 0;
   }
 

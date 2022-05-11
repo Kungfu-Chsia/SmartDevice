@@ -5,11 +5,8 @@ const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const server = require('browser-sync').create();
-const csso = require('gulp-csso');
-const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
-const svgstore = require('gulp-svgstore');
 const del = require('del');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config.js');
@@ -106,14 +103,14 @@ const syncServer = () => {
 
   gulp.watch('source/**.html', gulp.series(copy, refresh));
   gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css, devStyles));
-  gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
-  gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
+  gulp.watch('source/js/**/*.{js}', gulp.series(js, refresh));
+  // gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
   gulp.watch('source/img/**/*.svg', gulp.series(copySvg, refresh));
   gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, refresh));
   gulp.watch('source/favicon/**', gulp.series(copy, refresh));
-  gulp.watch('source/video/**', gulp.series(copy, refresh));
-  gulp.watch('source/downloads/**', gulp.series(copy, refresh));
-  gulp.watch('source/*.php', gulp.series(copy, refresh));
+  // gulp.watch('source/video/**', gulp.series(copy, refresh));
+  // gulp.watch('source/downloads/**', gulp.series(copy, refresh));
+  // gulp.watch('source/*.php', gulp.series(copy, refresh));
 };
 
 const refresh = (done) => {

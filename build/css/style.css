@@ -1337,6 +1337,14 @@ button,
   justify-content: start;
   margin-left: 11px;
   margin-top: 22px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.page-footer__social-link {
+  display: block;
+  width: 55px;
+  height: 55px;
 }
 
 .page-footer__social-link svg {
@@ -2335,7 +2343,7 @@ button,
 
   .page-footer__site-sections {
     max-width: 100%;
-    margin-top: 27px;
+    margin-top: 18px;
   }
 
   .page-footer__site-sections::before {
@@ -2360,6 +2368,10 @@ button,
     top: -17px;
   }
 
+  .page-footer__site-sections-wrap {
+    margin: 0;
+  }
+
   .page-footer__social-list {
     margin-right: -10px;
     margin-top: 9px;
@@ -2368,10 +2380,11 @@ button,
   .page-footer__site-sections h4,
   .page-footer__contacts h4 {
     margin-bottom: 18px;
+    width: 91%;
   }
 
   .page-footer__site-sections h4 {
-    width: 100%;
+    width: 91%;
   }
 
   .page-footer__site-sections-column a {
@@ -2445,6 +2458,14 @@ button,
     display: block;
   }
 
+  .accordion__toggle-wrapper {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
   .accordion__toggle-wrapper--right {
     margin-left: 0;
   }
@@ -2457,9 +2478,9 @@ button,
     -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 
   .accordion__header-menu {

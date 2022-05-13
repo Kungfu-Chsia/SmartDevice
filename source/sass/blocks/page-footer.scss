@@ -74,7 +74,7 @@
 
   @media (max-width: $tablet-width) {
     max-width: 100%;
-    margin-top: 27px;
+    margin-top: 18px;
 
     &::before {
       content: "";
@@ -113,6 +113,10 @@
     flex-direction: column;
     margin: 0 -50px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .page-footer__phones {
@@ -126,6 +130,7 @@
   justify-content: start;
   margin-left: 11px;
   margin-top: 22px;
+  flex-wrap: wrap;
 
   @media (max-width: $desktop-width) {
     margin-right: -21px;
@@ -136,6 +141,12 @@
     margin-right: -10px;
     margin-top: 9px;
   }
+}
+
+.page-footer__social-link {
+  display: block;
+  width: 55px;
+  height: 55px;
 }
 
 .page-footer__social-link svg {
@@ -161,6 +172,7 @@
 
   @media (max-width: $tablet-width) {
     margin-bottom: 18px;
+    width: 91%;
   }
 }
 
@@ -168,7 +180,7 @@
   width: 411px;
 
   @media (max-width: $tablet-width) {
-    width: 100%;
+    width: 91%;
   }
 }
 

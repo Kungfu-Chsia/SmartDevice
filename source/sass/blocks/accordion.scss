@@ -17,6 +17,11 @@
 }
 
 .accordion__toggle-wrapper {
+  @media (max-width: $tablet-width) {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   &--right {
     margin-left: 26px;
 
@@ -32,7 +37,7 @@
   @media (max-width: $tablet-width) {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 }
 

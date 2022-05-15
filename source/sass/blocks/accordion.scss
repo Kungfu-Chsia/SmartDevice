@@ -45,7 +45,8 @@
   margin: 0 -26px;
 
   @media (max-width: $desktop-width) {
-    margin: 0 -50px;
+    // margin: 0 -50px;
+    // margin: 0;
   }
 
   @media (max-width: $tablet-width) {

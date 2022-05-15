@@ -54,10 +54,10 @@
 .page-footer__site-sections {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 162px;
+  margin-left: 172px;
   max-width: 500px;
   position: relative;
-  margin-right: 106px;
+  margin-right: 101px;
 
   @media (max-width: 1439px) {
     margin-left: 6%;
@@ -164,7 +164,7 @@
   font-family: "Roboto Condensed", "Arial", monospace;
   font-weight: 400;
   margin-top: 6px;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 
   @media (max-width: $desktop-width) {
     margin-bottom: 21px;
@@ -179,8 +179,25 @@
 .page-footer__site-sections h4 {
   width: 411px;
 
+  @media (max-width: $desktop-width) {
+    width: 254px;
+    margin-left: -25px;
+  }
+
   @media (max-width: $tablet-width) {
     width: 91%;
+    margin-left: 0;
+  }
+}
+
+.page-footer__contacts h4 {
+  @media (max-width: $desktop-width) {
+    width: 277px;
+    margin-left: -25px;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-left: 0;
   }
 }
 
@@ -243,7 +260,7 @@
 .page-footer__contacts {
   @media (max-width: $desktop-width) {
     margin-top: 26px;
-    margin-left: 21px;
+    margin-left: 72px;
   }
 
   @media (max-width: $tablet-width) {

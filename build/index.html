@@ -10,6 +10,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Smart Device - производство, монтаж, поставка комплектующих">
   </head>
 
   <body>
@@ -18,21 +19,21 @@
       <div class="container">
         <div class="page-header__wrapper">
           <div class="page-header__logo">
-            <a class="page-header__logolink">
+            <a href="#" class="page-header__logolink">
               <svg class="page-header__icon-logo" width="215" height="55">
                 <use xlink:href="img/sprite/sprite.svg#logo-l"></use>
               </svg>
             </a>
           </div>
           <div class="page-header__logo-small">
-            <a class="page-header__logolink">
+            <a href="#" class="page-header__logolink">
               <svg class="page-header__icon-logo" width="35" height="35">
                 <use xlink:href="img/sprite/sprite.svg#logo-s"></use>
               </svg>
             </a>
           </div>
           <div class="page-header__contacts">
-            <div>
+            <div class="page-header__link">
               <a class="page-header__mail" href="mailto:info@sd.ru">
                 <svg class="page-header__icon-phone" width="40" height="40">
                   <use xlink:href="img/sprite/sprite.svg#email"></use>
@@ -40,15 +41,13 @@
                 <span>info@sd.ru</span>
               </a>
             </div>
-            <div>
-              <div>
+            <div class="page-header__link">
                 <a class="page-header__phone" href="tel:+74950005252">
                   <svg class="page-header__icon-mail" width="40" height="40">
                     <use xlink:href="img/sprite/sprite.svg#phone"></use>
                   </svg>
                   <span>+7 (495) 000 52 52</span>
                 </a>
-              </div>
             </div>
           </div>
           <button class="page-header__button btn" type="button" aria-label="перейти к заказу звонка">Заказать звонок</button>
@@ -312,11 +311,11 @@
                 <form id="questions-form-modal-table" action="https://echo.htmlacademy.ru/" method="post">
                   <div class="questions-form-modal__form-input">
                     <label class="visually-hidden" for="namie">имя</label>
-                      <input type="text" id="namie" name="name" placeholder="Имя" required>
+                      <input type="text" id="namie" name="namie" placeholder="Имя" required>
                   </div>
                   <div class="questions-form-modal__form-input">
                     <label class="visually-hidden" for="telefon">телефон</label>
-                      <input class="js-phone" type="tel" id="telefon" name="telephone" placeholder="Телефон" required>
+                      <input class="js-phone-modal" type="tel" id="telefon" name="telephone" placeholder="Телефон" required>
                   </div>
                   <textarea class="questions-form-modal__textarea" id="qsts" name="qsts" placeholder="Ваш вопрос"></textarea>
                   <div class="questions-form-modal__button-wrap">

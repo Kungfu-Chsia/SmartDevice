@@ -7,11 +7,11 @@
 
   @media (max-width: $desktop-width) {
     min-height: 100px;
+    position: absolute;
   }
 
   @media (max-width: $tablet-width) {
     min-height: 70px;
-    position: static;
   }
 }
 
@@ -35,6 +35,8 @@
   justify-content: space-between;
   padding-top: 6px;
   margin-right: 3px;
+  flex-wrap: wrap;
+  max-width: 63%;
 
   @media (max-width: $desktop-width) {
     margin-right: 28px;
@@ -55,6 +57,7 @@
   padding-left: 40px;
   padding-top: 9px;
   min-width: 225px;
+  margin-bottom: 15px;
 
   @media (max-width: $desktop-width) {
     min-width: 30px;
@@ -73,6 +76,10 @@
   top: 0;
 }
 
+.page-header__link {
+  display: flex;
+  flex-direction: column;
+}
 
 .page-header__button {
   min-width: 160px;

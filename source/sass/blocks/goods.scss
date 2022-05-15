@@ -44,8 +44,9 @@
 
 .goods__wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 140px;
+  padding-bottom: 113px;
 
   @media (max-width: $desktop-width) {
     flex-direction: column;
@@ -140,6 +141,7 @@
   background-size: cover;
   max-width: 350px;
   width: 100%;
+  margin-bottom: 30px;
 
   &:hover {
     opacity: 0.7;
@@ -156,7 +158,6 @@
   @media (max-width: $desktop-width) {
     max-width: 1006px;
     min-height: 250px;
-    margin-bottom: 30px;
   }
 
   @media (max-width: $tablet-width) {

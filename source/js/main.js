@@ -5,7 +5,9 @@ import initAccordion from './modules/accordion/accordion';
 import initShowMore from './modules/show-more-text';
 import initMask from './modules/phone-mask';
 import './modules/scroll';
+import initForma from './modules/forma';
 import initModalWindow from './modules/modal-form';
+
 // ---------------------------------
 
 
@@ -18,10 +20,14 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Modules
   // ---------------------------------
+
+
+  initModalWindow();
+  initForma();
   initShowMore();
   initAccordion();
   initMask();
-  initModalWindow();
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

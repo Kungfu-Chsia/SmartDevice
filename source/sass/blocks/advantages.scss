@@ -53,7 +53,7 @@
   }
 
   @media (max-width: $desktop-width) {
-    width: 48%;
+    // width: 670px;
     padding: 39px 39px 15px 40px;
     min-height: 360px;
   }
@@ -64,6 +64,7 @@
     min-height: 340px;
     padding: 30px 39px 15px 25px;
     margin-bottom: 30px;
+    max-width: 670px;
   }
 }
 

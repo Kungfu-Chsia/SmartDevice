@@ -3,11 +3,11 @@
   align-items: end;
   background-color: $bg-blue;
   width: 500px;
-  position: fixed;
+  position: absolute;
   border-radius: 3px;
-  top: 11.3%;
-  right: 50%;
-  transform: translateX(48%);
+  top: 46px;
+  left: 50%;
+  transform: translateX(140%);
 }
 
 .questions-form-modal__wrap {

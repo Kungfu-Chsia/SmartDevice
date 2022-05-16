@@ -62,7 +62,7 @@
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
@@ -84,27 +84,6 @@
   }
 }
 
-.accordion__toggle-vert {
-  background-color: rgba(248, 253, 255, 0.7);
-  display: block;
-  width: 1px;
-  height: 15px;
-  position: absolute;
-  top: 5px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.accordion__toggle-gorizont {
-  background-color: rgba(248, 253, 255, 0.7);
-  display: block;
-  width: 15px;
-  height: 1px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5px;
-}
 
 .show {
   .about__hidden {

@@ -30,7 +30,6 @@ const initForma = function () {
   }
 
   const checkNumberModal = () => {
-    console.log(123)
     const minTitleName = 11;
     const maxTitleName = 11;
 
@@ -38,29 +37,23 @@ const initForma = function () {
         document.querySelector('.js-phone-modal'), {
           mask: '+{7}(000)000-00-00',
         });
-    console.log(phoneMask);
 
     const valueLength = phoneMask._unmaskedValue.length;
-    console.log(valueLength);
+
     if (valueLength < minTitleName) {
-      console.log(valueLength);
-      console.log(222);
       formContactsInput2.setCustomValidity(`Ещё ${minTitleName - valueLength} симв.`);
     } else if (valueLength > maxTitleName) {
       formContactsInput2.setCustomValidity(`Удалите лишние ${valueLength - maxTitleName} симв.`);
     } else {
       formContactsInput2.setCustomValidity('');
     }
-    console.log(formContactsInput2);
-    console.log(444)
+
     formContactsInput2.reportValidity();
   };
 
 
-console.log(formContactsInput2);
   if (formContactsInput2 !== null) {
     formContactsInput2.addEventListener('input', checkNumberModal);
-    console.log(333);
   }
 
   //* *  name validation **//

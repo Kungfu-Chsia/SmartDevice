@@ -3,16 +3,18 @@
   align-items: end;
   background-color: $bg-blue;
   width: 500px;
-  position: absolute;
+  position: relative;
   border-radius: 3px;
-  top: 46px;
-  left: 50%;
-  transform: translateX(140%);
+  min-height: 610px;
+  margin: 0 auto;
 }
 
 .questions-form-modal__wrap {
   position: absolute;
   margin: 0 auto;
+  top: 114px;
+  left: -14px;
+  right: 0;
 }
 
 .questions-form-modal__inner {
@@ -25,7 +27,7 @@
 }
 
 .questions-form-modal__title h3 {
-  margin-top: 41px;
+  padding-top: 41px;
   margin-bottom: 0;
   font-weight: 400;
   font-size: 30px;
@@ -44,7 +46,7 @@
 
 
 .questions-form-modal__table {
-  margin-bottom: 38px;
+  padding-bottom: 38px;
 }
 
 .questions-form-modal__table form {
@@ -66,7 +68,7 @@
   padding: 15px;
   min-width: 420px;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   position: relative;
   display: block;
 
@@ -88,7 +90,7 @@
   min-height: 155px;
   background-color: rgba(4, 20, 39, 0.15);
   resize: none;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 
   &::placeholder {
     color: $color-default-white;
@@ -163,8 +165,8 @@
 
 .questions-form-modal__toggle {
   position: absolute;
-  right: 12px;
-  top: -22px;
+  right: 16px;
+  top: 19px;
   display: block;
   z-index: 2;
   width: 40px;

@@ -9,8 +9,14 @@ const createFormSuccessError = () => {
 };
 
 const hideModalForm = (modalForm, classHide) => {
-  if (modalForm !== null && !modalForm.classList.contains(classHide)) {
-    modalForm.classList.add(classHide);
+  // if (modalForm !== null && !modalForm.classList.contains(classHide)) {
+  //   modalForm.classList.add(classHide);
+  // }
+  // elseif (modalForm !== null && modalForm.classList.contains(classHide)) {
+  //   modalForm.classList.remove(classHide);
+  // }
+  if (modalForm !== null) {
+    modalForm.classList.toggle(classHide);
   }
 };
 
@@ -54,10 +60,9 @@ const initModalWindow = () => {
 
   overlay.addEventListener('click', function (e) {
 
-    if (e.target.className === 'overlay') {
-
+    if (e.target.className === 'overlay' || e.target.className === 'questions-form-modal__wrap') {
       modalForm.classList.remove('active');
-      modalForm.classList.add('hidden');
+      // modalForm.classList.add('hidden');
       overlay.classList.add('hidden');
       overlay.classList.remove('active');
       body.classList.remove('overflow-hidden');

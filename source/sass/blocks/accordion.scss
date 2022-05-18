@@ -45,11 +45,6 @@
 .accordion__header-menu {
   margin: 0 -26px;
 
-  @media (max-width: $desktop-width) {
-    // margin: 0 -50px;
-    // margin: 0;
-  }
-
   @media (max-width: $tablet-width) {
     margin: 0;
   }
@@ -68,7 +63,6 @@
 
 .accordion__toggle-gorizont {
   background-color: rgba(248, 253, 255, 0.7);
-  display: block;
   width: 15px;
   height: 1px;
   position: absolute;

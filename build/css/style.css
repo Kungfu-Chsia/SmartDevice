@@ -1016,7 +1016,7 @@ button,
   background-size: cover;
   max-width: 350px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 5%;
 }
 
 .goods__card:hover {
@@ -1679,7 +1679,6 @@ button,
 
 .accordion__toggle-gorizont {
   background-color: rgba(248, 253, 255, 0.7);
-  display: block;
   width: 15px;
   height: 1px;
   position: absolute;
